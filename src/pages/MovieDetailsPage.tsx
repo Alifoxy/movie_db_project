@@ -1,13 +1,13 @@
-import {MovieDetails} from "../components";
+// import {MovieDetails} from "../components";
 
-const MovieDetails = () => {
+const MovieDetailsPage = () => {
     return (
         <div>
-            <hr/>
-            <MovieDetails/>
-            <hr/>
+            {/*<hr/>*/}
+            {/*<MovieDetails/>*/}
+            {/*<hr/>*/}
         </div>
     );
 };
 
-export {MovieDetails};
+export {MovieDetailsPage};

@@ -1,5 +1,7 @@
+import {IMovie} from "./movieInterface";
+
 export interface IMovies {
     page: number;
-    results: [];
+    results: IMovie[];
     total_pages: number;
 }
