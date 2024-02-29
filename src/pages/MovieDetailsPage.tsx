@@ -1,11 +1,11 @@
-// import {MovieDetails} from "../components";
+import {GetMovieDetails} from "../components";
 
 const MovieDetailsPage = () => {
     return (
         <div>
-            {/*<hr/>*/}
-            {/*<MovieDetails/>*/}
-            {/*<hr/>*/}
+            <hr/>
+            <GetMovieDetails/>
+            <hr/>
         </div>
     );
 };
