@@ -9,7 +9,7 @@ interface IProps extends PropsWithChildren {
     page:number
 }
 const Movie: FC<IProps> = ({Movie,page}) => {
-    const {title, vote_average,} = Movie;
+    const {title, vote_average, poster_path} = Movie;
 
     const movie_id = Movie.id
 
@@ -22,7 +22,10 @@ const Movie: FC<IProps> = ({Movie,page}) => {
     return (
         <div className={'mini_block'}>
             <div>{title}</div>
-            <div className={'poster_div'}><Posters movieID={movie_id}/></div>
+            <div>
+                <img  className={'main_poster'} src={`https://image.tmdb.org/t/p/original${poster_path}`} alt={'poster'}/>
+            </div>
+            {/*<div className={'poster_div'}><Posters movieID={movie_id}/></div>*/}
             <div>vote: {vote_average}</div>
             <div>
                 <button onClick = {toDetails} className={'button'}>Details... </button>
