@@ -2,23 +2,22 @@ export interface IMovieDetails{
     id: number;
     imdb_id:string;
     title: string;
-    genres:[];
+    genres:[{
+        id:number;
+        name:string;
+    }];
     tagline:string;
     original_language:string;
     overview:string;
-    production_companies:ICompanies[],
-    production_countries:ICountries[],
+    production_companies:[{
+        name:string;
+    }];
+    production_countries:[{
+        name:string;
+    }];
     budget:number;
     release_date:string;
     runtime:number;
     vote_average: number;
 
-}
-
-interface ICountries{
-    name:string
-}
-
-interface ICompanies{
-    name:string
 }

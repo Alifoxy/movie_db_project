@@ -50,7 +50,9 @@ const Movies: FC<IProps> = () => {
 
     return (
         <div className={'main_block'}>
-            {movies.map(movie => <Movie key={movie.id} Movie={movie}/>)}
+            <div className={'movies_block'}>
+                {movies.map(movie => <Movie key={movie.id} Movie={movie} page={currentPage.current_page}/>)}
+            </div>
             <div className={'pagination_block'}>
                 <button disabled={currentPage.current_page === 1} onClick={prev} className={'button'}>prev</button>
                 <button disabled={currentPage.current_page === totalPages.total_pages} onClick={next} className={'button'}>next</button>
