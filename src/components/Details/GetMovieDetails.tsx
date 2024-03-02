@@ -3,6 +3,7 @@ import {useNavigate, useParams} from "react-router-dom";
 import {IMovieDetails} from "../../interfaces";
 import {movieService} from "../../services";
 import {MovieDetails} from "./MovieDetails";
+import {Posters} from "../Posters";
 
 interface IProps extends PropsWithChildren {
 }
@@ -25,9 +26,9 @@ const GetMovieDetails: FC<IProps> = () => {
     }
 
     return (
-        <div className={'main_block'}>
-            <div><button onClick={back} className={'button'}>back</button></div>
-            {movieDetails && <MovieDetails MovieDetails={movieDetails}/>}
+        <div className={'main_det_block'}>
+            <div><button onClick={back} className={'button'}> {'<< Back'} </button></div>
+            <div>{movieDetails && <MovieDetails MovieDetails={movieDetails}/>}</div>
         </div>
     );
 };

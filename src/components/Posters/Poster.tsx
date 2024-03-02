@@ -16,7 +16,7 @@ const Poster: FC<IProps> = ({MoviePoster,}) => {
 
 
     return (
-            <img  className={'main_poster'} src={`https://image.tmdb.org/t/p/original${set_link}`} alt={'poster'}/>
+            <img  className={'det_poster'} src={`https://image.tmdb.org/t/p/original${set_link}`} alt={'poster'}/>
     );
 };
 
