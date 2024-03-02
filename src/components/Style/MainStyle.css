@@ -168,18 +168,6 @@ body {
     font-size: 20px;
     color: orangered;
 }
-.title_block2 {
-    display: flex;
-    justify-content: center;
-    box-sizing: border-box;
-    width: 1000px;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 20px;
-    color: #c8c8ff;
-    border: 3px dashed #c8c8ff;
-}
-
 .error_block{
     color: #d50606;
 }
@@ -207,5 +195,9 @@ button:disabled{
     background: lightgray;
     border: 2px solid gray;
     color: #4d4d4d;
+}
+.vote{
+    width: 100%;
+    background: orange;
 }
 
