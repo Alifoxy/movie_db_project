@@ -1,7 +1,7 @@
 import React, {FC, PropsWithChildren} from "react";
 import {useNavigate} from "react-router-dom";
 import {IMovie} from "../../interfaces";
-
+import {SetRating} from "../../hooks";
 
 
 interface IProps extends PropsWithChildren {
@@ -11,15 +11,13 @@ interface IProps extends PropsWithChildren {
 const Movie: FC<IProps> = ({Movie,page}) => {
     const {title, vote_average, poster_path} = Movie;
 
-
-
     const toDetails = () => {
         const mov_id = Movie.id;
         navigate(`${page}/details/${mov_id}`)
     };
 
     const navigate = useNavigate()
-    // @ts-ignore
+
     return (
         <div className={'mini_block'}>
             <div className={'inner_movie_block'}>
@@ -27,8 +25,8 @@ const Movie: FC<IProps> = ({Movie,page}) => {
                 <div>
                     <img  className={'main_poster'} src={`https://image.tmdb.org/t/p/original${poster_path}`} alt={'poster'}/>
                 </div>
-                <div className={'vote'}>vote: {vote_average}</div>
-                <div >
+                <SetRating rating={vote_average}/>
+                <div>
                     <button onClick = {toDetails} className={'det_button'}>Details... </button>
                 </div>
             </div>

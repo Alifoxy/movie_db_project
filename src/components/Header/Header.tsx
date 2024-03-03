@@ -1,6 +1,7 @@
 import {NavLink} from "react-router-dom";
 
 import css from './Header.module.css';
+import {ThemeSwitcher} from "../../hooks";
 
 
 const Header = () => {
@@ -8,6 +9,7 @@ const Header = () => {
         <div className={css.Header}>
             <NavLink to={'movies'}>Movies</NavLink>
             <NavLink to={'search'}>Search</NavLink>
+            <ThemeSwitcher/>
         </div>
     );
 };

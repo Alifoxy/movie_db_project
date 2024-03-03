@@ -1,5 +1,4 @@
 body {
-    background: linear-gradient(0deg, rgba(255,94,0,1) 0%, rgba(0,0,0,1) 50%);
     display: flex;
     justify-content: center;
 }
@@ -150,7 +149,7 @@ body {
     display: flex;
     justify-content: center;
     box-sizing: border-box;
-    font-size: 25px;
+    font-size: 30px;
     width: 940px;
     padding: 10px;
     margin:10px;
@@ -197,7 +196,10 @@ button:disabled{
     color: #4d4d4d;
 }
 .vote{
-    width: 100%;
-    background: orange;
+    display: flex;
+    width: 435px;
+    margin-top: 10px;
+    justify-content: center;
+
 }
 

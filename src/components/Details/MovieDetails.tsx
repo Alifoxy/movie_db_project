@@ -1,6 +1,7 @@
-import {FC, PropsWithChildren} from "react";
+import React, {FC, PropsWithChildren} from "react";
 import {IMovieDetails} from "../../interfaces";
 import {Posters} from "../Posters";
+import {SetDetRating} from "../../hooks";
 
 interface IProps extends PropsWithChildren {
     MovieDetails: IMovieDetails
@@ -44,7 +45,7 @@ const MovieDetails: FC<IProps> = ({MovieDetails}) => {
                     <div>budget: {budget}</div>
                     <div>runtime: {runtime}</div>
                     <div>original language: {original_language}</div>
-                    <div>vote: {vote_average}</div>
+                    <div className={'vote'}><SetDetRating rating={vote_average}/></div>
                 </div>
             </div>
             <h3 className={'det_title'}> Overview</h3>
