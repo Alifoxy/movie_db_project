@@ -18,10 +18,10 @@
 }
 
 .Header a:hover{
-    text-decoration: underline;
+    text-decoration: none;
     color: indigo;
 }
 
-/*.Header a[class='active']{*/
-/*    color: indigo;*/
-/*}*/
+.Header a[class='active']{
+    color: indigo;
+}

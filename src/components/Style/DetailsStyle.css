@@ -70,3 +70,15 @@
     margin: 10px 0 10px 0;
     width: 450px;
 }
+.det_title{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    font-size: 30px;
+    width: 940px;
+    padding: 10px;
+    margin:10px;
+    border-radius: 20px;
+    color: gold;
+    border: 3px dashed gold;
+}

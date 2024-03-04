@@ -2,6 +2,7 @@ export interface IMovieDetails{
     id: number;
     imdb_id:string;
     title: string;
+    poster_path: string;
     genres:[{
         id:number;
         name:string;

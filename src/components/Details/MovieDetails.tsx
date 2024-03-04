@@ -24,6 +24,12 @@ const MovieDetails: FC<IProps> = ({MovieDetails}) => {
         <div className={'mini_det_block'}>
             <h3 className={'det_title'}> Description</h3>
             <div className={'inner_det_block'}>
+
+                {/*alternate way to get poster*/}
+                {/*<div>*/}
+                {/*    <img  className={'det_poster_div'} src={`https://image.tmdb.org/t/p/original${poster_path}`} alt={'poster'}/>*/}
+                {/*</div>*/}
+
                 <div className={'det_poster_div'}><Posters movieID={id}/></div>
                 <div className={'inner_desc_block'}>
                     <div>id: {id}</div>
