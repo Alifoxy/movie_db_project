@@ -7,7 +7,6 @@ import {MovieDetails} from "./MovieDetails";
 interface IProps extends PropsWithChildren {
 }
 
-
 const GetMovieDetails: FC<IProps> = () => {
     const [movieDetails, setMovieDetails] = useState<IMovieDetails>()
     const {movie_id} = useParams()

@@ -1,3 +1,3 @@
 export * from "./SetRating";
-export * from "./ThemeSwitcher";
+export * from "./Themes";
 

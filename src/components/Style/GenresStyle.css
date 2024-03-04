@@ -1,0 +1,35 @@
+.genres_block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #939393;
+    border-top: 15px dotted lightgray;
+    border-bottom: 15px dotted lightgray;
+    padding:10px;
+    margin-top: 20px;
+    width: 1280px;
+    height: 160px;
+}
+.inner_gen_block{
+    display: flex;
+    background-color: lightgray;
+    width: 1170px;
+    height: 120px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 20px;
+}
+.genre_item{
+    display: flex;
+    width: 130px;
+    height: 20px;
+    padding: 5px;
+    margin: 3px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(255,72,0,1) 30%, rgba(255,142,43,1) 90%);
+    border-radius: 20px;
+    color: white;
+}

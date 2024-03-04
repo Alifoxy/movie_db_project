@@ -30,7 +30,7 @@ const MovieDetails: FC<IProps> = ({MovieDetails}) => {
                     <div>imdb id: {imdb_id}</div>
                     <div className={'movie_title'}><p>{title}</p></div>
                     <div>tagline: {tagline}</div>
-                    <div className={'genres_block'}>{genre_name}</div>
+                    <div className={'genres_det_block'}>{genre_name}</div>
                     <div>release date: {release_date}</div>
                     <div>production countries:
                         <ul>
